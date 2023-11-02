@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: all .5s;
+}
+.body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:url(./Assets/footer-bg.jpg);
+    z-index: 10000000000000000000000000000000000000000000 !important;
+    
+}
+.indexMore{
+    z-index: 100000000000000000000000000000000000000000000 !important;
+
+}
+.box{
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.box::before{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    right: 50%;
+    background: linear-gradient(0deg, transparent,white,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    right: 50%;
+    background: linear-gradient(0deg, transparent,white,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Form */
+.form{
+    inset: 2px;
+    padding: 15px;
+    position: relative;
+    border-radius: 8px;
+    background-image:
+    linear-gradient(to bottom, rgba(39, 39, 40, 0.52), rgba(27, 8, 22, 0.73)),
+    url('./Assets/footer-bg.jpg');
+    background-position:center center;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+.form h2{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: white;
+    transform: translateX(0px) translateY(-50px);
+    font-size: 0.75em;
+}
+.inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 0;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i{
+     height: 44px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2){
+    color: #45f3ff;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+} 
+input[type="submit"]:active{
+    opacity: 0.8;
+}
+.loading{
+    width: 100%;
+    height: 100vh;
+    background-color:#00000096;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+}
+.index{
+    z-index: 9999999999999999;
+}
+.list-color:hover{
+    color: #FA4035 !important;
+    cursor: pointer;
+    }
+.list-color-none:hover{
+    color: green !important;
+    cursor: pointer;
+    }
+.active{
+    border-bottom:3px solid red ;
+    color: aliceblue;
+    }
+    .motion{
+        transition: all 1s;
+    }
+.bg-transp{
+background-color: #23242a07;
+}
+.bg-transp-rev{
+background-color: #2e2f37;
+}
+.bg-darkul{
+    background-color: rgba(0, 0, 0, 0.596) !important;
+    height: 100vh !important;
+}
+.real{
+    position: relative !important;
+    z-index: 300 !important;
+}
+
+.badingtop{
+    margin-top: 20%;
+}
+.w-35{
+    width: 35%;
+}
+.hov:hover{
+    background-color: rgba(240, 248, 255, 0.747) !important;
+    color: #FA4035 !important;
+}
+.hov2:hover{
+box-shadow: red 0 0 15px 4px !important;
+}
+.trans{
+    transform: rotate(-180deg);
+    transition: all 4s;
+}
+.trans-back{
+    transform: rotate(0deg);
+}
+.scall{
+    transform: scale(0);
+}
+.small{
+    font-size: .8rem !important;
+}
+.absolute{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #00000090;
+    opacity: 0;
+    z-index: 333;
+}
+.mov{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #00000070;
+    opacity: 0;
+    z-index: 333;
+}
+
+.hover-div:hover .absolute{
+    opacity: 1;
+}
+.hover-div:hover .mov{
+    opacity: 1;
+    box-shadow: rgb(120, 120, 120) 0 0 15px 0px;
+}
+.red:hover{
+    color: red;
+    transform: scale(1.5);
+    transition: all .2s !important;
+}
+.media-hov:hover{
+color: #FA4035 !important;
+background-color: black !important;
+}
+
+.shadow-more{
+    box-shadow: rgb(52, 51, 51) 0 0 10px 15px; 
+}
+.pointer{
+    cursor: pointer;
+}
+.flow{
+    /* overflow-x: auto; */
+}
+.flowmo{
+    overflow-y: hidden;
+}
+.shadow-top{
+    box-shadow: rgb(9, 9, 9) 0 0 90px 70px; 
+}
+.trans-form{
+/* transform: translateY(20%); */
+}
+.z-back{
+    z-index: -3;
+}
+.bg-marvel{
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.z-200{
+    z-index: 10000;
+}
