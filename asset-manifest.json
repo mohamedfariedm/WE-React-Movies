@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/WE-React-Movies/static/css/main.877f357d.css",
+    "main.js": "/WE-React-Movies/static/js/main.015669ec.js",
+    "static/media/footer-bg.jpg": "/WE-React-Movies/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg",
+    "static/media/fa-solid-900.ttf": "/WE-React-Movies/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fa-brands-400.ttf": "/WE-React-Movies/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/WE-React-Movies/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/WE-React-Movies/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/fa-regular-400.ttf": "/WE-React-Movies/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/paseLogo.png": "/WE-React-Movies/static/media/paseLogo.a645fef26482ff75216d.png",
+    "static/media/fa-regular-400.woff2": "/WE-React-Movies/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/WE-React-Movies/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/WE-React-Movies/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/WE-React-Movies/index.html",
+    "main.877f357d.css.map": "/WE-React-Movies/static/css/main.877f357d.css.map",
+    "main.015669ec.js.map": "/WE-React-Movies/static/js/main.015669ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.877f357d.css",
+    "static/js/main.015669ec.js"
+  ]
+}
