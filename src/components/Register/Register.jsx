@@ -13,6 +13,9 @@ import {Helmet} from "react-helmet";
 
 
 export default function Register() {
+  window.scroll({
+    top:0,
+  })
   const settings = {
     dots: true,
     infinite: true,
@@ -59,7 +62,7 @@ export default function Register() {
 
 
   let {getMoviesList}=tmdbApi;
-  let {data,isLoading}=useQuery('movieDataRegister',()=>getMoviesList("upcoming","movie",1))
+  let {data,isLoading:sIsLoading}=useQuery('movieDataRegister',()=>getMoviesList("upcoming","movie",1))
 
 
 
@@ -147,7 +150,7 @@ export default function Register() {
       </div>
     </div>
   </section>
-  {isLoding?  <div className='loading'>
+  {isLoding&&sIsLoading?  <div className='loading'>
   <Triangle
   height="100"
   width="100"

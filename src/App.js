@@ -14,7 +14,7 @@ import { Toaster } from 'react-hot-toast';
 function App() {
 let routers=createHashRouter([{
   path:"",element:<LayOut/>,children:[
-    {index:true,element:<ProtectedRoute><Home/></ProtectedRoute>},
+    {index:true,element:<Home/>},
     {path:"login",element:<Login/>},
     {path:"Register",element:<Register/>},
     {path:"movies/:pageNum",element:<ProtectedRoute><Movies/></ProtectedRoute>},
