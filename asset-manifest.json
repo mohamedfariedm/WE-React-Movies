@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WE-React-Movies/static/css/main.877f357d.css",
-    "main.js": "/WE-React-Movies/static/js/main.6827c517.js",
+    "main.js": "/WE-React-Movies/static/js/main.8085bd2c.js",
     "static/media/footer-bg.jpg": "/WE-React-Movies/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg",
     "static/media/fa-solid-900.ttf": "/WE-React-Movies/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/fa-brands-400.ttf": "/WE-React-Movies/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
@@ -14,10 +14,10 @@
     "static/media/fa-v4compatibility.woff2": "/WE-React-Movies/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
     "index.html": "/WE-React-Movies/index.html",
     "main.877f357d.css.map": "/WE-React-Movies/static/css/main.877f357d.css.map",
-    "main.6827c517.js.map": "/WE-React-Movies/static/js/main.6827c517.js.map"
+    "main.8085bd2c.js.map": "/WE-React-Movies/static/js/main.8085bd2c.js.map"
   },
   "entrypoints": [
     "static/css/main.877f357d.css",
-    "static/js/main.6827c517.js"
+    "static/js/main.8085bd2c.js"
   ]
 }
