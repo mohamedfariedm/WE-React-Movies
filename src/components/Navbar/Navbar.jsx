@@ -58,7 +58,8 @@ let noNav=false
     noNav=false
   }
   return <>
-  {noNav?  <nav className={navScrol?'bg-transp-rev text-white  fixed-top w-100 ':'bg-transp text-white w-100  fixed-top'}>
+  {noNav? 
+   <nav className={navScrol?'bg-transp-rev text-white  fixed-top w-100 ':'bg-transp text-white w-100  fixed-top'}>
     <div className={mobail?'container d-flex justify-content-between align-items-center py-1 ':'container d-flex justify-content-between align-items-center py-3 '}>
       <Link to={""} className='d-flex justify-content-center align-items-center text-danger list-color-none'>
         <i className={ultra?'fa fa-sold fa-play px-2 fs-5':'fa fa-sold fa-play px-2 fs-2'}></i>
@@ -93,7 +94,34 @@ let noNav=false
 
       </div>
     </div>
-  </nav>:""}
+  </nav>:   <nav className={navScrol?'bg-transp-rev text-white  fixed-top w-100 ':'bg-transp text-white w-100  fixed-top'}>
+    <div className={mobail?'container d-flex justify-content-between align-items-center py-1 ':'container d-flex justify-content-between align-items-center py-3 '}>
+      <Link to={""} className='d-flex justify-content-center align-items-center text-danger list-color-none'>
+        <i className={ultra?'fa fa-sold fa-play px-2 fs-5':'fa fa-sold fa-play px-2 fs-2'}></i>
+        <img className='px-2' src={image} width={ultra?100:150} alt="" />
+      </Link>
+      <div className='d-flex align-items-center justify-content-center '>
+        <ul className='list-unstyled d-flex align-items-center justify-content-center p-0 m-0'>
+          {mobail?"":<>          
+          <li className='px-3 list-color' onClick={logOut}>Sign In</li></>}
+
+
+
+          {mobail?        
+          <li className="nav-item d-flex justify-content-center align-items-center">
+          <p className="nav-link btn d-flex justify-content-center align-items-center pt-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i className={ultra?"fa-solid fa-bars fs-6":"fa-solid fa-bars fs-1"}></i>
+          </p>
+          <ul className="dropdown-menu bg-dark mt-4 end-0 top-0 text-center motion">
+          <li className=' py-2 text-white list-color ' onClick={logOut}>Sign In</li>
+          </ul>
+        </li>:""
+}
+        </ul>
+
+      </div>
+    </div>
+  </nav>}
 
 
 

@@ -38,7 +38,7 @@ export default function Register() {
     email:yup.string().email("email unvalied").required(),
     password:yup.string().matches(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/,"password must have one spitial char and one capital char").required(),
     rePassword: yup.string().oneOf([yup.ref('password')],"not the same password").required(" is requerd"),
-    phone: yup.string().matches(/^\(?([0-9]{3})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/).required("is requard"),
+    phone: yup.string().matches(/^\(?([0-9]{3})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/,"phone not valied").required("phone is requard"),
   })
   async function handelSubmit(values){
     setIsLoding(true);
@@ -117,7 +117,6 @@ export default function Register() {
             </div>
             {formik.errors.phone&&formik.touched.phone?<p className='text-danger  p-1 my-1'>{formik.errors.phone}</p>:""}
             <div className="links my-2 px-3">
-                <a href="#">Forget password</a>
                 <Link to="/login">Sign In</Link>
             </div>
             <div className='w-25'> 

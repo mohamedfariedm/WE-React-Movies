@@ -112,7 +112,7 @@ export default function Login() {
 
 
             <div className="links my-2 px-3">
-                <a href="#">Forget password</a>
+                <Link to="/forgotPassword">Forgot password</Link>
                 <Link  to="/register">Signup</Link>     
                 </div>
             <div style={{width:'30%'}}> 

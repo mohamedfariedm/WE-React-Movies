@@ -74,7 +74,7 @@ export default function MainSlider() {
           <div className="row  g-2 align-items-center justify-content-center">
             <div className={ind==index?"col-md-7 opacity-100 ":"col-md-7 opacity-0 trans "}>
               <h2 className='h1 fw-bold pt-3'>{movie.original_title}</h2>
-              <p>{movie.overview}</p>
+              <p>{movie.overview.split(" ").slice(0,20).join(" ")}...</p>
               <div className={mobail?' text-centet d-flex justify-content-center align-items-center flex-column':"text-centet d-flex justify-content-center align-items-start py-2"}>
                 <Link to={`/movie/details/${movie.id}`} className={mobail?' ms-3 my-1 btn bg-danger text-white   rounded-4 px-4 py-1 w-75 hov2 position-relative z-3':`ms-3 my-1 btn bg-danger text-white  rounded-4 px-5 py-1 hov2 real`  } > Watch Now</Link>
                 <p onClick={()=>handelclick(movie.id)} className={mobail?'ms-3 my-1 btn text-white border-white  rounded-4 px-4 py-1 shadow-lg w-75 hov position-relative z-3':'ms-3 my-1 btn text-white border-white  rounded-4 px-5 py-1 shadow-lg hov real'}> Trailer</p>

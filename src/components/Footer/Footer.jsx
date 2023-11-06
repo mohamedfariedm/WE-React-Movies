@@ -1,10 +1,14 @@
 import React,{useRef,useState,useEffect} from 'react'
 import img from '../../Assets/paseLogo.png'
 import emailjs from '@emailjs/browser'
+import { Link } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Footer() {
 
-  
+  function handelToast(){
+    toast.error("coming soon")
+  }
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -82,12 +86,13 @@ export default function Footer() {
     <div className="row pt-5 justify-content-center align-items-center">
       <div className=" col-md-6 mb-3 ">
         <ul className={mobail?"nav d-flex flex-column align-items-center g-2  justify-content-center":"nav d-flex justify-content-around"}>
-          <li className="nav-item mb-2 media-hov"><a href="#" className="nav-link p-0 media-hov text-light">Home</a></li>
-          <li className="nav-item mb-2 media-hov"><a href="#" className="nav-link p-0 media-hov text-light">About</a></li>
-          <li className="nav-item mb-2 media-hov"><a href="#" className="nav-link p-0 media-hov text-light">Features</a></li>
-          <li className="nav-item mb-2 media-hov"><a href="#" className="nav-link p-0 media-hov text-light">Pricing</a></li>
-          <li className="nav-item mb-2 media-hov"><a href="#" className="nav-link p-0 media-hov text-light">FAQs</a></li>
+          <li className="nav-item mb-2 media-hov"><Link href="" className="nav-link p-0 media-hov text-light">Home</Link></li>
+          <li className="nav-item mb-2 media-hov"><a onClick={handelToast} className="nav-link p-0 media-hov text-light pointer">About</a></li>
+          <li className="nav-item mb-2 media-hov"><a onClick={handelToast} className="nav-link p-0 media-hov text-light pointer">Features</a></li>
+          <li className="nav-item mb-2 media-hov"><a onClick={handelToast} className="nav-link p-0 media-hov text-light pointer">Pricing</a></li>
+          <li className="nav-item mb-2 media-hov"><a onClick={handelToast} className="nav-link p-0 media-hov text-light pointer">FAQs</a></li>
         </ul>
+        <Toaster />
       </div>
 
       <div className="col-md-6  mb-3 shadow-lg p-2">
@@ -131,9 +136,9 @@ export default function Footer() {
     <div className="d-flex flex-column flex-sm-row justify-content-between py-2 border-top">
       <p>© 2023 MohamedFaried..WeekEndMovies. All rights reserved.</p>
       <ul className="list-unstyled d-flex ">
-        <li className="ms-3"><a className="text-light" href="#"><i className='fs-2 media-hov fa-brands fa-facebook'></i></a></li>
-        <li className="ms-3"><a className="text-light" href="#"><i className='fs-2 media-hov fa-brands fa-instagram'></i></a></li>
-        <li className="ms-3"><a className="text-light" href="#"><i className='fs-2 media-hov fa-brands fa-linkedin'></i></a></li>
+        <li className="ms-3"><a className="text-light" href="https://www.instagram.com/friedovic/" target='_blank'><i className='fs-2 media-hov fa-brands  fa-instagram'></i></a></li>
+        <li className="ms-3"><a className="text-light" href="https://www.facebook.com/eng.mohamed.fried" target='_blank'><i className='fs-2 media-hov fa-brands fa-facebook '></i></a></li>
+        <li className="ms-3"><a className="text-light" href="https://www.linkedin.com/in/mohamed-faried-847267296/" target='_blank'><i className='fs-2 media-hov fa-brands fa-linkedin'></i></a></li>
       </ul>
     </div>
   </footer>

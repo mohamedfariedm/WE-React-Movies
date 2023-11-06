@@ -61,7 +61,6 @@ let navigate=useNavigate();
   useEffect(()=>{
   },[term])
 
-console.log(data)
 
   const[mobail,setMobile]=useState(false)
   useEffect(()=>{
@@ -83,7 +82,6 @@ let moviesArray=[]
 useEffect(()=>{
 if(localStorage.getItem("moviesArray")!==null){
   moviesArray=JSON.parse(localStorage.getItem("moviesArray"))
-  console.log(moviesArray);
 }
 },[moviesArray])
 
@@ -114,7 +112,6 @@ if(count==0){
   style:{backgroundColor:`black`,color:`green`,marginTop:`65px`}
   })
 }
-  console.log(moviesArray)
 }
 
 
@@ -154,7 +151,7 @@ if(count==0){
   <div className='d-flex justify-content-start align-items-center'>
     {search===0?<label onClick={()=>{setSerch(1)}}  htmlFor='serch'><span className='pointer hov text-white bg-dark border border-0 rounded-5 fs-6 px-4 py-2 '><i className="fa-solid me-3 fa-search text-white hov2"></i>search...</span> </label>
     :
-    <input id='serch' placeholder='search' className={mobail?'pointer hov2 text-white bg-dark border border-0 rounded-5 fs-6 px-2 mb-4 py-1 w-75':'pointer hov2 text-white bg-dark border border-0 rounded-5 fs-6 px-2 mb-4 py-1 '} onInput={(e)=>{setTerm(e.target.value);refetch();}}/>
+    <input id='serch' placeholder='search' className={mobail?'pointer hov2 text-white bg-dark border border-0 rounded-5 fs-6 px-2 mb-4 py-1 w-50':'pointer hov2 text-white bg-dark border border-0 rounded-5 fs-6 px-2 mb-4 py-1 '} onInput={(e)=>{setTerm(e.target.value);refetch();}}/>
 }
   </div>
             {
