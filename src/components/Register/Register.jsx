@@ -13,9 +13,6 @@ import {Helmet} from "react-helmet";
 
 
 export default function Register() {
-  window.scroll({
-    top:0,
-  })
   const settings = {
     dots: true,
     infinite: true,

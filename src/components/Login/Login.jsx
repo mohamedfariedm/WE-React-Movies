@@ -11,9 +11,7 @@ import tmdbApi from '../../api/TmdbApi'
 import {Helmet} from "react-helmet";
 
 export default function Login() {
-  window.scroll({
-    top:0,
-  })
+
   const settings = {
     dots: true,
     infinite: true,
